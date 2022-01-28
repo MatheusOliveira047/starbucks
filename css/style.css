@@ -160,3 +160,11 @@ a{
  }
     
 }
+
+.float{
+    transition: 0.8s;
+}
+
+.img .float:hover{
+    transform: translateY(-30px);
+}
