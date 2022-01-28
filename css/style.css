@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+html,body{
+    overflow: hidden;
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top:20px ;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.header .container a img{
+    width: 75px;
+}
+
+.header .container nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: end;
+ 
+}
+
+.header .container nav ul li a{
+    color: black;
+    padding: 10px 20px;
+    
+    display: flex;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.header .container nav ul li a:hover{
+    background-color: #017143;
+    color: #fff;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.banner .container-banner{
+    width: 90%;
+}
+
+
+.extras{
+        position: absolute;
+        top: 0;
+        right: -300px;
+        border-radius: 100%;
+        width: 850px;
+        height: 780px;
+        background-color: #017143;
+    
+}
+.extras img{
+    width: 300px;
+}
+
+.extras .media{
+    position: absolute;
+    right: 320px;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.extras .media a img{
+    width: 20px;
+    margin-bottom: 20px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    margin: 80px 0 0 80px;
+    width: 50%;
+    
+}
+
+.text-sobre h1{
+    font-size: 40px;
+}
+
+.text-sobre p{
+    margin: 20px 0;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text-sobre button{
+    border:0;
+    background-color: #017143;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.img{
+    position: absolute;
+    bottom: 20px;
+    right: 40%;
+}
+.img img{
+    width: 70px;
+}
+
+@media (max-width:1100px) {
+ .center,.extras{
+     width: 80%;
+ }
+ .extras{
+     margin-top: 20px;
+     position:initial;
+     border-radius: 0;
+     width: 120%;
+     overflow:auto;
+     height: 100%;
+ }
+ .extras img{
+    display: none;
+}
+.extras .media a img{
+    display: block;
+}
+ .extras .media{
+     top:400px;
+     right: 20px;
+ }
+    
+}
